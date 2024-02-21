@@ -22,10 +22,17 @@
   </body>
   <script>
     function userInfo() {
+      // DOM 접근을 위한 변수 선언
       const ID = document.getElementById("ID");
-      const userID = (ID.value = "DOM 접근 테스트");
       const PW = document.getElementById("PW");
-      const userPW = (PW.value = "DOM 접근 테스트");
+
+      // HTML 로그인 폼에 작성한 문자열을 각각 변수 선언
+      const userID = ID.value;
+      const userPW = PW.value;
+
+      // 콘솔 출력 테스트
+      console.log(`userID: ${userID}`);
+      console.log(`userPW: ${userPW}`);
     }
   </script>
 </html>
