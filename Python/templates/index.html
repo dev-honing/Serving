@@ -13,26 +13,10 @@
 
       <label for="PW">PW: </label>
       <input type="password" id="PW" placeholder="PW를 입력하세요." />
-      <!-- <button type="submit" id="submit" onsubmit="userInfo()">로그인</button> -->
       <br />
+      <button type="submit" id="submit">로그인</button>
     </form>
     <a id="signUp" href="/signup">회원가입</a>
     <a id="forgot" href="/forgot">비밀번호 찾기</a>
-    <button onclick="userInfo()">테스트</button>
   </body>
-  <script>
-    function userInfo() {
-      // DOM 접근을 위한 변수 선언
-      const ID = document.getElementById("ID");
-      const PW = document.getElementById("PW");
-
-      // HTML 로그인 폼에 작성한 문자열을 각각 변수 선언
-      const userID = ID.value;
-      const userPW = PW.value;
-
-      // 콘솔 출력 테스트
-      console.log(`userID: ${userID}`);
-      console.log(`userPW: ${userPW}`);
-    }
-  </script>
 </html>
