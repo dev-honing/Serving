@@ -43,7 +43,7 @@ def index():
         # 데이터베이스 커넥션 닫기
         cursor.close()
 
-        return "POST 처리 성공"
+        return render_template("success.html")
     else:
         return render_template("index.html")
 
